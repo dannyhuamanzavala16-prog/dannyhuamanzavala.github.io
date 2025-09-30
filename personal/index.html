@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Mi Página - Inicio</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,30,60,0.8)), 
+                url("image/foto1 (2).jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 3em;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 8px cyan; }
+    50% { transform: scale(1.08); box-shadow: 0 0 20px cyan, 0 0 35px #00ffff; }
+    100% { transform: scale(1); box-shadow: 0 0 8px cyan; }
+}
+
+h1 {
+    color: gold;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px gold, 0 0 25px orange, 0 0 40px #ffaa00;
+    animation: fadeIn 1.2s ease-out;
+}
+h2 {
+    color: cyan;
+    font-size: 1.5em;
+    text-shadow: 0 0 8px cyan, 0 0 15px #00ffff;
+    margin-top: 1.5em;
+    animation: fadeIn 1.5s ease-out;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2em;
+}
+li { margin: 1em 0; }
+
+a {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: 2px solid cyan;
+    background: rgba(255,255,255,0.1);
+    transition: all 0.3s ease-in-out;
+    animation: pulse 3s infinite;
+}
+a:hover {
+    background: cyan;
+    color: black;
+    transform: scale(1.15);
+    box-shadow: 0 0 20px cyan, 0 0 40px cyan;
+}
+
+/* Estilos para iconos de redes */
+.iconos-redes img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    box-shadow: 0 0 8px white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.iconos-redes img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px cyan, 0 0 30px #00ffff;
+}
+
+p { margin-top: 2em; font-size: 1.1em; }
+small { color: #bbb; }
+</style>
+</head>
+
+<body>
+<h1>🌴 Bienvenido a mi Página 🌴</h1>
+<p>Hola, soy <b>Danny Huamán Zavala</b>.  
+Gracias por visitar mi página.  
+Aquí encontrarás más sobre mí: mis hobbies, mi comida favorita y mis viajes. 🚀</p>
+
+<h2>Opciones</h2>
+<ul>
+  <li><a href="sobre/sobreMi.html">🙋 Sobre Mí</a></li>
+  <li>
+    <div class="iconos-redes">
+      <a href="https://wa.me/51922238687" target="_blank">
+        <img src="image/whatsapp.jpg" alt="WhatsApp"> WhatsApp
+      </a>
+    </div>
+  </li>
+  <li>
+    <div class="iconos-redes">
+      <a href="https://www.facebook.com/Danny-Huaman-Zavala" target="_blank">
+        <img src="image/facebook.jpg" alt="Facebook"> Facebook
+      </a>
+    </div>
+  </li>
+</ul>
+
+<p><small>© 2025, Danny Huamán Zavala</small></p>
+</body>
+</html>
